@@ -3,8 +3,6 @@
 }
 .botao{
     color: white !important;
-}
-.botao{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 0.7rem;
@@ -19,4 +17,7 @@
     font-size:35px;
     position: absolute;
     bottom: 5px;
+}
+section a{
+    color: white;
 }
