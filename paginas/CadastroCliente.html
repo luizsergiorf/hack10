@@ -10,7 +10,7 @@
 	<meta name="keywords" content="au theme template">
 
 	<!-- Title Page-->
-	<title>Cliente</title>
+	<title>Modal</title>
 
 	<!-- Fontfaces CSS-->
 	<link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -33,6 +33,9 @@
 	<!-- Main CSS-->
 	<link href="../css/theme.css" rel="stylesheet" media="all">
 	<link href="../css/style.css" rel="stylesheet" media="all">
+
+	<!-- Awesome Icons Font-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -133,7 +136,7 @@
 			<header class="header-desktop">
 				<div class="section__content section__content--p30">
 					<div class="container-fluid">
-						<div class="header-wrap barra">
+						<div class="header-wrap  barra">
 							<div class="header-button">
 
 								<div class="noti-wrap">
@@ -189,101 +192,114 @@
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-12">
-								<!-- INICIO DO CONTEUDO-->
-								<div class="row">
-									<div class="col">
-										<section>
-											<div class="text-secondary btn btn-primary botao">
-												<a href="CadastroCliente.html"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Cliente</a></div>
-										</section>
+
+								<div class="card">
+									<div class="card-body card-block">
+										<form action="" method="post" class>
+											<div class="form-row">
+
+												<div class="form-group col-md-8">
+													<label for="InputNomeCliente" class="pr-1  form-control-label">Nome</label>
+													<input type="text" id="InputNomeCliente" value="Luiz Sérgio Resende" required="" class="form-control">
+												</div>
+
+												<div class="form-group col-md-2">
+													<label for="InputIdadeCliente" class="px-1  form-control-label">Idade</label>
+													<input type="text" id="InputIdadeCliente" value="24 anos" required="" class="form-control">
+												</div>
+
+												<div class="form-group col-md-2">
+													<label for="InputAniversario" class="px-1  form-control-label">Aniversario</label>
+													<input type="text" id="InputAniversario" value="14/04" required="" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-3">
+													<label for="InputCPF" class="px-1  form-control-label">CPF</label>
+													<input type="text" id="InputCPF" value="000.000.000-54" required="" class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+												<div class="form-group col-md-3">
+													<label for="InputFone" class="px-1  form-control-label">Fone</label>
+													<input type="text" id="InputFone" value="34 0000-0000" required="" class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+												<div class="form-group col-md-3">
+													<label for="InputWhatsapp" class="px-1  form-control-label">Whatsapp</label>
+													<input type="text" id="InputWhatsapp" value="34 0000-0000" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<a href="whatsapp.com">
+														<button class="iconsFA">
+															<i class="fa fa-whatsapp"></i>
+														</button>
+													</a>
+												</div>
+											</div>
+
+
+											<div class="form-group">
+												<label for="InputEndereco" class="px-1  form-control-label">Endereço</label>
+												<input type="text" id="InputEndereco" value="Rua exemplo, n 80" required="" class="form-control">
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<label for="InputBairro" class="px-1  form-control-label">Bairro</label>
+													<input type="text" id="InputBairro" value="Mercês" required="" class="form-control">
+												</div>
+												<div class="form-group col-md-4">
+													<label for="InputCidade" class="px-1  form-control-label">Cidade</label>
+													<input type="text" id="InputCidade" value="Uberaba" required="" class="form-control">
+												</div>
+												<div class="form-group col-md-4">
+													<label for="InputEstado" class="px-1  form-control-label">Estado</label>
+													<input type="text" id="InputEstado" value="Minas Gerais" required="" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-5">
+													<label for="InputFacebook" class="px-1  form-control-label">Facebook</label>
+													<input type="text" id="InputFacebook" value="http://www.facebook.com/iago.rdg" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<button class="iconsFA">
+														<i class="fa fa-facebook-official"></i>
+													</button>
+												</div>
+												<div class="form-group col-md-5">
+													<label for="InputInstagram" class="px-1  form-control-label">Instagram</label>
+													<input type="text" id="InputInstagram" value="" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<button class="iconsFA">
+														<i class="fa fa-instagram"></i>
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="card-footer">
+										<button type="submit" class="btn btn-primary btn-sm">
+											<i class="fa fa-dot-circle-o"></i> Salvar
+										</button>
+										<button type="reset" class="btn btn-danger btn-sm">
+											<i class="fa fa-ban"></i> Excluir
+										</button>
 									</div>
 								</div>
-								<br>
-								<div class="row">
-									<div class="table-responsive m-b-40">
-										<table class="table table-borderless table-data3">
-											<thead>
-												<tr>
-													<th>id</th>
-													<th>Nome</th>
-													<th>CPF</th>
-													<th>Nasc.</th>
-													<th>Última Compra</th>
-													<th>Detalhes</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<!-- END PAGE CONTAINER-->
-
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="copyright">
+									<p>Copyright © 2018 Colorlib. All rights reserved. Template by
+										<a href="https://colorlib.com">Colorlib</a>.</p>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="copyright">
-						<p>Copyright © 2018 Colorlib. All rights reserved. Template by
-							<a href="https://colorlib.com">Colorlib</a>.</p>
-					</div>
-				</div>
-			</div>
-
 		</div>
 		<!-- END PAGE CONTAINER-->
 
