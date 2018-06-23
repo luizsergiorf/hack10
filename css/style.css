@@ -4,14 +4,12 @@
 .botao{
     color: white !important;
 }
-.botao{
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 0.7rem;
+.form10{
+    width: 10% !important;
+    
 }
-.btnCliente{
-    padding: .1rem .4rem;
-}
-.data{
-    letter-spacing: 1px;
+.iconsFA{
+    font-size:35px;
+    position: absolute;
+    bottom: 5px;
 }
