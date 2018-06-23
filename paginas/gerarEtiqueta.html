@@ -33,32 +33,13 @@
 	<!-- Main CSS-->
 	<link href="../css/theme.css" rel="stylesheet" media="all">
 	<link href="../css/style.css" rel="stylesheet" media="all">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+	 crossorigin="anonymous"></script>
 
 </head>
 
 
-<script language="Javascript">
-	function Enviar1() {
-		 return alert("Hello! I am an alert box!!");
-	}
 
-	function gerar() {
-		//Tão simples
-		var doc = new jsPDF();
-		// definir o tamanho da fonte...
-		doc.setFontSize(22);
-		// Adicionar texto
-		doc.text(20, 20, 'Meu PDF');
-		// adicionar outra pagina
-		doc.addPage();
-		// selecionar outro tamanho de fonte
-		doc.setFontSize(16);
-		// adicionar texto
-		doc.text(20, 30, 'Olá eu sou um texto!');
-		pdf.writeToFile ( 'c:\\ myFile.pdf ');
-
-	}
-</script>
 
 <body class="animsition">
 	<div class="page-wrapper">
@@ -216,8 +197,71 @@
 								<!-- INICIO DO CONTEUDO-->
 
 								<h3>GERAR ETIQUETA</h3>
+								<br>
+
+								<div class="card">
+									<div class="card-body card-block">
+										<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+											<div class="row form-group">
+												<div class="col col-md-3">
+													<label for="text-input" class=" form-control-label">Nome do Produto</label>
+												</div>
+												<div class="col-12 col-md-6">
+													<input  type="text" id="nome" name="text-input" placeholder="Kingston" class="form-control" value="" required>
+												</div>
+											</div>
+											<div class="row form-group">
+												<div class="col col-md-3">
+													<label for="text-input" class=" form-control-label">Preço a Vista</label>
+												</div>
+												<div class="col-12 col-md-2">
+													<input type="number" id="precoVista" name="text-input" placeholder="R$ 20,0" class="form-control" value="" required>
+												</div>
+											</div>
+											<div class="row form-group">
+													<div class="col col-md-3">
+														<label for="text-input" class=" form-control-label">Preço a Prazo</label>
+													</div>
+													<div class="col-12 col-md-2">
+														<input type="number" id="precoPrazo" name="text-input" placeholder="R$ 20,0" class="form-control" value="" required>
+													</div>
+												</div>
+											<div class="row form-group">
+												<div class="col col-md-3">
+													<label for="text-input" class=" form-control-label">Nº de Parcelas</label>
+												</div>
+												<div class="col-12 col-md-2">
+													<input type="number" id="parcelas" name="text-input" placeholder="2" class="form-control" value="" required>
+												</div>
+											</div>
+											<div class="row form-group">
+												<div class="col col-md-3">
+													<label for="text-input" class=" form-control-label">Taxa de Juros</label>
+												</div>
+												<div class="col-12 col-md-2">
+													<input type="number" id="juros" name="text-input" placeholder="R$ 7,0" class="form-control" value="" required>
+												</div>
+											</div>
+											<div class="row form-group">
+												<div class="col col-md-3">
+													<label for="text-input" class=" form-control-label">Outros Encargos</label>
+												</div>
+												<div class="col-12 col-md-2">
+													<input type="number" id="outros" name="text-input" placeholder="R$ 0,0" class="form-control" value="" required>
+												</div>
+											</div>
 
 
+											<button type="submit" onclick="gerarPdf(nome.value,precoVista.value,precoPrazo.value,parcelas.value,juros.value,outros.value)" class="btn btn-primary btn-lg">
+												Gerar Etiqueta</button>
+										</form>
+
+
+
+
+									</div>
+								</div>
 								<!-- FIM DO CONTEUDO-->
 
 							</div>
