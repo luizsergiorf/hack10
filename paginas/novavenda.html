@@ -33,7 +33,10 @@
 	<!-- Main CSS-->
 	<link href="../css/theme.css" rel="stylesheet" media="all">
 	<link href="../css/style.css" rel="stylesheet" media="all">
-
+	<link href="../css/autoComplete.css" rel="stylesheet" media="all">
+	<script>
+		var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua & Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia & Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central Arfrican Republic", "Chad", "Chile", "China", "Colombia", "Congo", "Cook Islands", "Costa Rica", "Cote D Ivoire", "Croatia", "Cuba", "Curacao", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France", "French Polynesia", "French West Indies", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauro", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russia", "Rwanda", "Saint Pierre & Miquelon", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "St Kitts & Nevis", "St Lucia", "St Vincent", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor L'Este", "Togo", "Tonga", "Trinidad & Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks & Caicos", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"];
+	</script>
 </head>
 
 <body class="animsition">
@@ -190,7 +193,7 @@
 						<div class="row">
 							<div class="col-md-7">
 								<!-- INICIO DO CONTEUDO-->
-								<form action="" method="post">
+								<form autocomplete="off" action="/action_page.php">
 									<div class="form-row">
 										<div class="col-5">
 											<div class="form-group has-success">
@@ -214,22 +217,38 @@
 										</div>
 									</div>
 									<div class="form-row">
+										<div class="col-6">
+											<div class="form-group has-success autocomplete">
+												<label for="myInput" class="control-label mb-1">Nome do Produto</label>
+												<input id="myInput" type="text" name="myCountry" placeholder="Country" class="form-control">
+											</div>
+										</div>
+										<div class="col-2">
+											<div class="form-group">
+												<label for="cc-exp" class="control-label mb-1">Quantidade</label>
+												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="3" data-val="true" data-val-required="Digite a quantidade"
+												 data-val-cc-exp="Digite a quantidade" placeholder="5" autocomplete="cc-exp" onkeypress="mascara(this,soNumeros)">
+												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+											</div>
+										</div>
+										<div class="col-3" style="padding-top: 30px;">
+											<div class="form-group ">
+												<button type="button" onclick="carrinhoDeCompras()" class="btn btn-primary">
+													<i class="fa fa-plus-circle"></i>&nbsp;Adicionar</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-row">
 										<div class="col-5">
 											<div class="form-group">
-												<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
-												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite o preço da venda"
+												<label for="cc-exp" class="control-label mb-1">Preço do Produto</label>
+												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required=""
 												 data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
 												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 											</div>
 										</div>
-										<div class="col-5">
-											<div class="form-group">
-												<label for="cc-exp" class="control-label mb-1">Data da venda</label>
-												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
-												 data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
-												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-											</div>
-										</div>
+
 									</div>
 									<div class="form-group">
 										<label for="cc-exp" class="control-label mb-1">Cupom</label>
@@ -257,7 +276,7 @@
 										</div>
 									</div>
 									<br>
-									<button type="button" class="btn btn-primary btn-lg">Concluir Venda</button>
+									<button type="submit" class="btn btn-primary btn-lg">Concluir Venda</button>
 								</form>
 							</div>
 							<div class="col-5">
