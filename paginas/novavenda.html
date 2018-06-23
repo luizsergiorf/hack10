@@ -188,166 +188,131 @@
 				<div class="section__content section__content--p30">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-7">
 								<!-- INICIO DO CONTEUDO-->
-								<label for="select" class=" form-control-label">Vendedor</label>
-								<div class="form-group has-success">
-									<select name="select" id="select" class="form-control">
-										<option value="0">Selecione o vendedor</option>
-										<option value="1">Fellipe Prates</option>
-										<option value="2">Joaozinho</option>
-										<option value="3">Fernanda</option>
-									</select>
+								<div class="col-md-4">
+										<label for="select" class=" form-control-label">Vendedor</label>
+										<div class="form-group has-success">
+											<select name="select" id="select" class="form-control">
+												<option value="0">Selecione o vendedor</option>
+												<option value="1">Fellipe Prates</option>
+												<option value="2">Joaozinho</option>
+												<option value="3">Fernanda</option>
+											</select>
+										</div>
 								</div>
-
-
 								<div class="form-group has-success">
 									<label for="cc-name" class="control-label mb-1">CPF do Cliente</label>
 									<input id="cc-name" name="cc-name" placeholder="123.456.789-00" type="text" class="form-control cc-name valid" data-val="true"
-									    maxlength="14" data-val-required="Entre com o CPF do cliente" autocomplete="cc-name" aria-required="true" aria-invalid="false"
-									    aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
+									 maxlength="14" data-val-required="Entre com o CPF do cliente" autocomplete="cc-name" aria-required="true" aria-invalid="false"
+									 aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
 									<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
 								</div>
-
-
-
-
-
-								<br>
-								<div class="row">
-									<div class="table-responsive m-b-40">
-										<table class="table table-borderless table-data3">
-											<thead>
-												<tr>
-													<th>id</th>
-													<th>Nome</th>
-													<th>CPF</th>
-													<th>Nasc.</th>
-													<th>Última Compra</th>
-													<th>Detalhes</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>123.456.789-00</td>
-													<td class="data">25/12/1990</td>
-													<td class="data">23/06/2018</td>
-													<td>
-														<button class="btn btn-success btnCliente">visualizar</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<!-- END PAGE CONTAINER-->
-
-								</div>
-
-
-
 								<div class="form-group">
 									<label for="cc-exp" class="control-label mb-1">Data da venda</label>
 									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
-									    data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
+									 data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
 									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 								</div>
 
 								<div class="form-group">
 									<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
 									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite o preço da venda"
-									    data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
+									 data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
 									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 								</div>
 
 								<div class="form-group">
 									<label for="cc-exp" class="control-label mb-1">Cupom</label>
 									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" data-val="true" data-val-required="Digite o codigo cupom"
-									    data-val-cc-exp="Digite o codigo cupom" placeholder="Código Cupom" autocomplete="cc-exp">
+									 data-val-cc-exp="Digite o codigo cupom" placeholder="Código Cupom" autocomplete="cc-exp">
 									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 								</div>
-
-
-
 								<div class="row">
-									<div class="col-6">
+									<div class="col-md-6">
 										<div class="form-group">
 											<label for="cc-exp" class="control-label mb-1">Valor Total</label>
 											<input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" maxlength="8" value="" data-val="true" data-val-required="Mostra o valor total"
-											    data-val-cc-exp="Mostra o valor total" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
+											 data-val-cc-exp="Mostra o valor total" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
 											<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-md-6">
 										<label for="x_card_code" class="control-label mb-1">Desconto</label>
 										<div class="input-group">
 											<input id="x_card_code" name="x_card_code" type="tel" maxlength="3" placeholder="100%" class="form-control cc-cvc" value=""
-											    data-val="true" data-val-required="Digite o desconto" data-val-cc-cvc="Digite o desconto" autocomplete="off" onkeypress="mascara(this,soNumeros)">
+											 data-val="true" data-val-required="Digite o desconto" data-val-cc-cvc="Digite o desconto" autocomplete="off" onkeypress="mascara(this,soNumeros)">
 
 										</div>
 									</div>
 								</div>
-
-								<div>
-									<button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
-										<i class="fa fa-money"></i>&nbsp;
-										<span id="payment-button-amount">VENDER</span>
-										<span id="payment-button-sending" style="display:none;">Sending…</span>
-									</button>
-								</div>
-
-
-
-
-
-
-
+								<br>
+								<button type="button" class="btn btn-primary btn-lg">Concluir Venda</button>
 							</div>
+							<div class="col-lg-5">
+								<br>
+								<div class="au-card au-card--bg-blue au-card-top-countries">
+									<div class="au-card-inner">
+										<div class="table-responsive">
+											<table class="table table-top-countries">
+												<tbody>
+													<tr>
+														<td>United States</td>
+														<td class="text-right">$119,366.96</td>
+													</tr>
+													<tr>
+														<td>Australia</td>
+														<td class="text-right">$70,261.65</td>
+													</tr>
+													<tr>
+														<td>United Kingdom</td>
+														<td class="text-right">$46,399.22</td>
+													</tr>
+													<tr>
+														<td>Turkey</td>
+														<td class="text-right">$35,364.90</td>
+													</tr>
+													<tr>
+														<td>Germany</td>
+														<td class="text-right">$20,366.96</td>
+													</tr>
+													<tr>
+														<td>France</td>
+														<td class="text-right">$10,366.96</td>
+													</tr>
+													<tr>
+														<td>Australia</td>
+														<td class="text-right">$5,366.96</td>
+													</tr>
+													<tr>
+														<td>Italy</td>
+														<td class="text-right">$1639.32</td>
+													</tr>
+												</tbody>
+											</table>
+											<hr class="hr_class">
+											<table class="table table-top-countries">
+												<tbody>
+													<tr>
+														<td class="precoTotal">
+															<b>Total</b>
+														</td>
+														<td class="text-right precoTotal">
+															<b>$1639.32</b>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
 						</div>
 					</div>
 				</div>
 			</div>
+			<br>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="copyright">
