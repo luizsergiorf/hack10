@@ -10,7 +10,7 @@
 	<meta name="keywords" content="au theme template">
 
 	<!-- Title Page-->
-	<title>Vendas</title>
+	<title>Cliente</title>
 
 	<!-- Fontfaces CSS-->
 	<link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -35,6 +35,30 @@
 	<link href="../css/style.css" rel="stylesheet" media="all">
 
 </head>
+
+
+<script language="Javascript">
+	function Enviar1() {
+		 return alert("Hello! I am an alert box!!");
+	}
+
+	function gerar() {
+		//Tão simples
+		var doc = new jsPDF();
+		// definir o tamanho da fonte...
+		doc.setFontSize(22);
+		// Adicionar texto
+		doc.text(20, 20, 'Meu PDF');
+		// adicionar outra pagina
+		doc.addPage();
+		// selecionar outro tamanho de fonte
+		doc.setFontSize(16);
+		// adicionar texto
+		doc.text(20, 30, 'Olá eu sou um texto!');
+		pdf.writeToFile ( 'c:\\ myFile.pdf ');
+
+	}
+</script>
 
 <body class="animsition">
 	<div class="page-wrapper">
@@ -190,64 +214,12 @@
 						<div class="row">
 							<div class="col-md-12">
 								<!-- INICIO DO CONTEUDO-->
-								<div class="row">
-									<div class="col">
-										<section>
-											<div class="text-secondary btn btn-primary botao">
-												<a href="novavenda.html">
-													<i class="fa fa-plus-circle"></i>&nbsp;Adicionar Venda</a>
-											</div>
-										</section>
-									</div>
-								</div>
-								<br>
-								<br>
 
-								<div class="row">
-									<div class="table-responsive m-b-40">
-										<table class="table table-borderless table-data3">
-											<thead>
-												<tr>
-													<th>id</th>
-													<th>Cliente</th>
-													<th>Vendedor</th>
-													<th>Valor</th>
-													<th>Data da Compra</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>Luiz Sérgio</td>
-													<td>100,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>Iago Rodrigues</td>
-													<td class="data">100,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>Luiz Sérgio</td>
-													<td class="data">1000,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>Iago Rodrigues</td>
-													<td class="data">300,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
+								<h3>GERAR ETIQUETA</h3>
+
+
+								<!-- FIM DO CONTEUDO-->
+
 							</div>
 						</div>
 					</div>
@@ -290,6 +262,8 @@
 
 	<!-- Main JS-->
 	<script src="../js/main.js"></script>
+	<script src="../js/etiqueta.js"></script>
+	<script src="../js/validacao.js"></script>
 
 </body>
 

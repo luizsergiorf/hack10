@@ -10,13 +10,14 @@
 	<meta name="keywords" content="au theme template">
 
 	<!-- Title Page-->
-	<title>Vendas</title>
+	<title>Cliente</title>
 
 	<!-- Fontfaces CSS-->
 	<link href="../css/font-face.css" rel="stylesheet" media="all">
 	<link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
 	<link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
 	<link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
 
 	<!-- Bootstrap CSS-->
 	<link href="../vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
@@ -33,6 +34,11 @@
 	<!-- Main CSS-->
 	<link href="../css/theme.css" rel="stylesheet" media="all">
 	<link href="../css/style.css" rel="stylesheet" media="all">
+
+	<!-- VUE JS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	    crossorigin="anonymous">
+
 
 </head>
 
@@ -190,64 +196,36 @@
 						<div class="row">
 							<div class="col-md-12">
 								<!-- INICIO DO CONTEUDO-->
-								<div class="row">
-									<div class="col">
-										<section>
-											<div class="text-secondary btn btn-primary botao">
-												<a href="novavenda.html">
-													<i class="fa fa-plus-circle"></i>&nbsp;Adicionar Venda</a>
-											</div>
-										</section>
-									</div>
-								</div>
-								<br>
+
+
+
+
+
+
+
+
+
+
 								<br>
 
-								<div class="row">
-									<div class="table-responsive m-b-40">
-										<table class="table table-borderless table-data3">
-											<thead>
-												<tr>
-													<th>id</th>
-													<th>Cliente</th>
-													<th>Vendedor</th>
-													<th>Valor</th>
-													<th>Data da Compra</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>Luiz Sérgio</td>
-													<td>100,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>Iago Rodrigues</td>
-													<td class="data">100,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Iago Rodrigues</td>
-													<td>Luiz Sérgio</td>
-													<td class="data">1000,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Luiz Sérgio</td>
-													<td>Iago Rodrigues</td>
-													<td class="data">300,00</td>
-													<td class="data">23/06/2018</td>
-												</tr>
-											</tbody>
-										</table>
+
+
+								<div id="meuCarrinho">
+									<h1>Loja de carros</h1>
+									<div v-for="carro in carros">
+										<span>{{carro.nome}}</span>
+										<span>{{carro.preco}}</span>
+										<button @click="comprar(carro)">Comprar</button>
 									</div>
+
+									<h2>Subtotal: {{subTotal}}</h2>
 								</div>
+
+
+								<!-- END PAGE CONTAINER-->
+
+
+
 							</div>
 						</div>
 					</div>
@@ -290,6 +268,55 @@
 
 	<!-- Main JS-->
 	<script src="../js/main.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"></script>
+
+	<script>
+		var carrinho = new Vue({
+			el: '#meuCarrinho',
+			data: {
+				carros: [{
+						nome: 'Gol',
+						preco: 16000.00
+					},
+					{
+						nome: 'Fusca',
+						preco: 3450.00
+					},
+					{
+						nome: 'Uno',
+						preco: 9000.00
+					},
+					{
+						nome: 'Camaro',
+						preco: 190000.00
+					}
+				],
+				carrinho: [],
+				subTotal: 0.00,
+			},
+			watch: {
+				carrinho: function () {
+					this.atualizarSubTotal();
+				}
+			},
+			methods: {
+				atualizarSubTotal: function () {
+					var qtd = this.carrinho.length;
+					var total = 0;
+					for (var i = 0; i < qtd; i++) {
+						total = total + this.carrinho[i].preco;
+					}
+					this.subTotal = total;
+				},
+				comprar: function (carro) {
+					this.carrinho.push(carro);
+				},
+			},
+		})
+	</script>
+
+
 
 </body>
 
