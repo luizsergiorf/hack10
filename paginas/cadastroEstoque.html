@@ -10,7 +10,7 @@
 	<meta name="keywords" content="au theme template">
 
 	<!-- Title Page-->
-	<title>Cliente</title>
+	<title>Cadastrar Estoque</title>
 
 	<!-- Fontfaces CSS-->
 	<link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -22,7 +22,6 @@
 	<link href="../vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
 	<!-- Vendor CSS-->
-	<link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
 	<link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
 	<link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
 	<link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
@@ -187,84 +186,99 @@
 			<div class="main-content">
 				<div class="section__content section__content--p30">
 					<div class="container-fluid">
-						<div class="col-md-12">
-							<div class="row">
-								<div class="col-md-8">
-									<button class="text-secondary btn btn-primary botao botaoInicio">
-										Adicionar Venda
-									</button>
+						<div class="row">
+							<div class="col-md-10">
+								<div class="col-lg-10">
+									<div class="card">
+										<div class="card-header">
+											<strong>Cadastrar Estoque</strong>
+										</div>
+										<div class="card-body card-block">
+											<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+												<div class="row form-group">
+													<label for="text-input" class=" form-control-label col-md-2">Produto</label>
+													<select class="form-control cc-exp col-md-10">
+														<option>001 - Tenis </option>
+														<option>002 - Tenis</option>
+													</select>
+												</div>
+
+												<div class="row form-group">
+													<div class="col-md-6">
+														<label for="cc-exp" class="control-label mb-1">Preço de Custo</label>
+														<input id="input-precoCusto" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true"
+														    data-val-required="Preço de Custo" data-val-cc-exp="Preço de Custo" placeholder="R$ 00,00" autocomplete="cc-exp"
+														    onkeypress="mascara(this,moeda)">
+														<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+													</div>
+													<div class="col-md-6">
+														<label for="text-input" class=" form-control-label">Quantidade</label>
+														<input type="number" id="quantidade-input" name="text-input" placeholder="1" class="form-control">
+
+													</div>
+												</div>
+										</div>
+										<div class="row form-group">
+
+										</div>
+										</form>
+									</div>
+									<div class="card-footer" align="left">
+										<button type="submit" class="btn btn-primary btn-md">
+											<i class="fa fa-dot-circle-o"></i> Salvar
+										</button>
+									</div>
 								</div>
-								<div class="col-md-4">
-									<button class="text-secondary btn btn-primary botao botaoInicio">
-										Adicionar Venda
-									</button>
-								</div>
+
 							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<button class="text-secondary btn btn-primary botao botaoInicio">
-										Adicionar Venda
-									</button>
-								</div>
-								<div class="col-md-4">
-									<button class="text-secondary btn btn-primary botao botaoInicio">
-										Adicionar Venda
-									</button>
-								</div>
-								<div class="col-md-4">
-									<button class="text-secondary btn btn-primary botao botaoInicio">
-										Adicionar Venda
-									</button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4 botaoInicio">
-									<button class="text-secondary btn btn-primary botao">
-										Adicionar Venda
-									</button>
-								</div>
-								<div class="col-md-4 botaoInicio">
-									<button class="text-secondary btn btn-primary botao">
-										Adicionar Venda
-									</button>
-								</div>
-								<div class="col-md-4 botaoInicio">
-									<button class="text-secondary btn btn-primary botao">
-										Adicionar Venda
-									</button>
-								</div>
-							</div>
+							<!-- FIM DO CONTEUDO-->
+
 						</div>
+
 					</div>
 				</div>
 			</div>
-			<!-- END PAGE CONTAINER-->
-
 		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="copyright">
+				<p>Copyright © 2018 Colorlib. All rights reserved. Template by
+					<a href="https://colorlib.com">Colorlib</a>.</p>
+			</div>
+		</div>
+	</div>
 
-		<!-- Jquery JS-->
-		<script src="../vendor/jquery-3.2.1.min.js"></script>
-		<!-- Bootstrap JS-->
-		<script src="../vendor/bootstrap-4.1/popper.min.js"></script>
-		<script src="../vendor/bootstrap-4.1/bootstrap.min.js"></script>
-		<!-- Vendor JS       -->
-		<script src="../vendor/slick/slick.min.js">
-		</script>
-		<script src="../vendor/wow/wow.min.js"></script>
-		<script src="../vendor/animsition/animsition.min.js"></script>
-		<script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-		</script>
-		<script src="../vendor/counter-up/jquery.waypoints.min.js"></script>
-		<script src="../vendor/counter-up/jquery.counterup.min.js">
-		</script>
-		<script src="../vendor/circle-progress/circle-progress.min.js"></script>
-		<script src="../vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-		<script src="../vendor/chartjs/Chart.bundle.min.js"></script>
-		<script src="../vendor/select2/select2.min.js">
-		</script>
+	</div>
+	<!-- END PAGE CONTAINER-->
 
-		<!-- Main JS-->
-		<script src="../js/main.js"></script>
+	</div>
+
+	<!-- Jquery JS-->
+	<script src="../vendor/jquery-3.2.1.min.js"></script>
+	<!-- Bootstrap JS-->
+	<script src="../vendor/bootstrap-4.1/popper.min.js"></script>
+	<script src="../vendor/bootstrap-4.1/bootstrap.min.js"></script>
+	<!-- Vendor JS       -->
+	<script src="../vendor/slick/slick.min.js">
+	</script>
+	<script src="../vendor/wow/wow.min.js"></script>
+	<script src="../vendor/animsition/animsition.min.js"></script>
+	<script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+	</script>
+	<script src="../vendor/counter-up/jquery.waypoints.min.js"></script>
+	<script src="../vendor/counter-up/jquery.counterup.min.js">
+	</script>
+	<script src="../vendor/circle-progress/circle-progress.min.js"></script>
+	<script src="../vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+	<script src="../vendor/chartjs/Chart.bundle.min.js"></script>
+	<script src="../vendor/select2/select2.min.js">
+	</script>
+
+	<!-- Main JS-->
+	<script src="../js/main.js"></script>
+	<script src="../js/validacao.js"></script>
 
 </body>
 
