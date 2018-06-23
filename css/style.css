@@ -25,3 +25,11 @@ section a{
     text-align: center;
     font-size: 30px;
 }
+
+.pt-3-half {
+    padding-top: 1.4rem;
+}
+.card-footer{
+    margin-top: -30px;
+    background-color: #FFF;
+}
