@@ -15,3 +15,8 @@
 .data{
     letter-spacing: 1px;
 }
+.iconsFA{
+    font-size:35px;
+    position: absolute;
+    bottom: 5px;
+}
