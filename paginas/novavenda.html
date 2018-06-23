@@ -190,66 +190,77 @@
 						<div class="row">
 							<div class="col-md-7">
 								<!-- INICIO DO CONTEUDO-->
-								<div class="col-md-4">
-										<label for="select" class=" form-control-label">Vendedor</label>
-										<div class="form-group has-success">
-											<select name="select" id="select" class="form-control">
-												<option value="0">Selecione o vendedor</option>
-												<option value="1">Fellipe Prates</option>
-												<option value="2">Joaozinho</option>
-												<option value="3">Fernanda</option>
-											</select>
+								<form action="" method="post">
+									<div class="form-row">
+										<div class="col-5">
+											<div class="form-group has-success">
+												<label for="select" class=" control-label mb-1">Vendedor</label>
+												<select name="select" id="select" class="form-control">
+													<option value="0">Selecione o vendedor</option>
+													<option value="1">Fellipe Prates</option>
+													<option value="2">Joaozinho</option>
+													<option value="3">Fernanda</option>
+												</select>
+											</div>
 										</div>
-								</div>
-								<div class="form-group has-success">
-									<label for="cc-name" class="control-label mb-1">CPF do Cliente</label>
-									<input id="cc-name" name="cc-name" placeholder="123.456.789-00" type="text" class="form-control cc-name valid" data-val="true"
-									 maxlength="14" data-val-required="Entre com o CPF do cliente" autocomplete="cc-name" aria-required="true" aria-invalid="false"
-									 aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
-									<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-								</div>
-								<div class="form-group">
-									<label for="cc-exp" class="control-label mb-1">Data da venda</label>
-									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
-									 data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
-									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group">
-									<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
-									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite o preço da venda"
-									 data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
-									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group">
-									<label for="cc-exp" class="control-label mb-1">Cupom</label>
-									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" data-val="true" data-val-required="Digite o codigo cupom"
-									 data-val-cc-exp="Digite o codigo cupom" placeholder="Código Cupom" autocomplete="cc-exp">
-									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="cc-exp" class="control-label mb-1">Valor Total</label>
-											<input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" maxlength="8" value="" data-val="true" data-val-required="Mostra o valor total"
-											 data-val-cc-exp="Mostra o valor total" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
-											<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+										<div class="col-5">
+											<div class="form-group has-success">
+												<label for="cc-name" class="control-label mb-1">CPF do Cliente</label>
+												<input id="cc-name" name="cc-name" placeholder="123.456.789-00" type="text" class="form-control cc-name valid" data-val="true"
+												 maxlength="14" data-val-required="Entre com o CPF do cliente" autocomplete="cc-name" aria-required="true" aria-invalid="false"
+												 aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
+												<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<label for="x_card_code" class="control-label mb-1">Desconto</label>
-										<div class="input-group">
-											<input id="x_card_code" name="x_card_code" type="tel" maxlength="3" placeholder="100%" class="form-control cc-cvc" value=""
-											 data-val="true" data-val-required="Digite o desconto" data-val-cc-cvc="Digite o desconto" autocomplete="off" onkeypress="mascara(this,soNumeros)">
-
+									<div class="form-row">
+										<div class="col-5">
+											<div class="form-group">
+												<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
+												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite o preço da venda"
+												 data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
+												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+											</div>
+										</div>
+										<div class="col-5">
+											<div class="form-group">
+												<label for="cc-exp" class="control-label mb-1">Data da venda</label>
+												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
+												 data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
+												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+											</div>
 										</div>
 									</div>
-								</div>
-								<br>
-								<button type="button" class="btn btn-primary btn-lg">Concluir Venda</button>
+									<div class="form-group">
+										<label for="cc-exp" class="control-label mb-1">Cupom</label>
+										<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" data-val="true" data-val-required="Digite o codigo cupom"
+										 data-val-cc-exp="Digite o codigo cupom" placeholder="Código Cupom" autocomplete="cc-exp">
+										<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="cc-exp" class="control-label mb-1">Valor Total</label>
+												<input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" maxlength="8" value="" data-val="true" data-val-required="Mostra o valor total"
+												 data-val-cc-exp="Mostra o valor total" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
+												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="x_card_code" class="control-label mb-1">Desconto</label>
+											<div class="input-group">
+												<input id="x_card_code" name="x_card_code" type="tel" maxlength="3" placeholder="100%" class="form-control cc-cvc" value=""
+												 data-val="true" data-val-required="Digite o desconto" data-val-cc-cvc="Digite o desconto" autocomplete="off"
+												 onkeypress="mascara(this,soNumeros)">
+
+											</div>
+										</div>
+									</div>
+									<br>
+									<button type="button" class="btn btn-primary btn-lg">Concluir Venda</button>
+								</form>
 							</div>
-							<div class="col-lg-5">
+							<div class="col-5">
 								<br>
 								<div class="au-card au-card--bg-blue au-card-top-countries">
 									<div class="au-card-inner">
