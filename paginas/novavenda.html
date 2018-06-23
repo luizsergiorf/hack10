@@ -329,23 +329,119 @@
 
 											<div class="form-group has-success">
 												<label for="cc-name" class="control-label mb-1">CPF do Cliente</label>
-												<input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" maxlength="14" data-val-required="Entre com o CPF do cliente"
-												    autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
+												<input id="cc-name" name="cc-name" placeholder="123.456.789-00" type="text" class="form-control cc-name valid" data-val="true"
+												    maxlength="14" data-val-required="Entre com o CPF do cliente" autocomplete="cc-name" aria-required="true" aria-invalid="false"
+												    aria-describedby="cc-name-error" onkeypress="mascara(this,cpf)">
 												<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
 											</div>
+
+
+
+
+											<div class="col-lg-9">
+												<div class="table-responsive table--no-card m-b-30">
+
+													<table class="table table-borderless table-striped table-earning">
+														<thead>
+															<tr>
+																<th>date</th>
+																<th>order ID</th>
+																<th>name</th>
+																<th class="text-right">price</th>
+																<th class="text-right">quantity</th>
+																<th class="text-right">total</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>2018-09-29 05:57</td>
+																<td>100398</td>
+																<td>iPhone X 64Gb Grey</td>
+																<td class="text-right">$999.00</td>
+																<td class="text-right">1</td>
+																<td class="text-right">$999.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-28 01:22</td>
+																<td>100397</td>
+																<td>Samsung S8 Black</td>
+																<td class="text-right">$756.00</td>
+																<td class="text-right">1</td>
+																<td class="text-right">$756.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-27 02:12</td>
+																<td>100396</td>
+																<td>Game Console Controller</td>
+																<td class="text-right">$22.00</td>
+																<td class="text-right">2</td>
+																<td class="text-right">$44.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-26 23:06</td>
+																<td>100395</td>
+																<td>iPhone X 256Gb Black</td>
+																<td class="text-right">$1199.00</td>
+																<td class="text-right">1</td>
+																<td class="text-right">$1199.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-25 19:03</td>
+																<td>100393</td>
+																<td>USB 3.0 Cable</td>
+																<td class="text-right">$10.00</td>
+																<td class="text-right">3</td>
+																<td class="text-right">$30.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-29 05:57</td>
+																<td>100392</td>
+																<td>Smartwatch 4.0 LTE Wifi</td>
+																<td class="text-right">$199.00</td>
+																<td class="text-right">6</td>
+																<td class="text-right">$1494.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-24 19:10</td>
+																<td>100391</td>
+																<td>Camera C430W 4k</td>
+																<td class="text-right">$699.00</td>
+																<td class="text-right">1</td>
+																<td class="text-right">$699.00</td>
+															</tr>
+															<tr>
+																<td>2018-09-22 00:43</td>
+																<td>100393</td>
+																<td>USB 3.0 Cable</td>
+																<td class="text-right">$10.00</td>
+																<td class="text-right">3</td>
+																<td class="text-right">$30.00</td>
+															</tr>
+														</tbody>
+													</table>
+
+												</div>
+											</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 											<div class="form-group">
 												<label for="cc-exp" class="control-label mb-1">Data da venda</label>
 												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
 												    data-val-cc-exp="Digite a data da venda" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
-												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-											</div>
-
-											<div class="form-group">
-												<label for="cc-exp" class="control-label mb-1">Data de Vencimento</label>
-												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite a Data da Compra"
-												    data-val-cc-exp="Digite a data de vencimento" placeholder="DD / MM / YY" autocomplete="cc-exp" onkeypress="mascara(this,data)">
 												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 											</div>
 
@@ -363,14 +459,33 @@
 												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 											</div>
 
-
 											<div class="form-group">
-												<label for="cc-number" class="control-label mb-1">Valor Total</label>
-												<input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" maxlength="3" value="" data-val="true"
-												    data-val-required="Recebe o valor total com desconto" data-val-cc-number="Recebe o valor total com desconto"
-												    autocomplete="cc-number">
-												<span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true" onkeypress="mascara(this,soNumeros)"></span>
+												<label for="cc-exp" class="control-label mb-1">Cupom</label>
+												<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="3" data-val="true" data-val-required="Digite o codigo cupom"
+												    data-val-cc-exp="Digite o codigo cupom" placeholder="Código Cupom" autocomplete="cc-exp">
+												<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
 											</div>
+
+											<div class="row">
+												<div class="col-6">
+													<div class="form-group">
+														<label for="cc-exp" class="control-label mb-1">Valor Total</label>
+														<input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" value="" data-val="true" data-val-required="Please enter the card expiration"
+														    data-val-cc-exp="Please enter a valid month and year" placeholder="R$ 00,00" autocomplete="cc-exp">
+														<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+													</div>
+												</div>
+												<div class="col-6">
+													<label for="x_card_code" class="control-label mb-1">Desconto</label>
+													<div class="input-group">
+														<input id="x_card_code" name="x_card_code" type="tel" placeholder="100%" class="form-control cc-cvc" value="" data-val="true"
+														    data-val-required="Please enter the security code" data-val-cc-cvc="Please enter a valid security code" autocomplete="off">
+
+													</div>
+												</div>
+											</div>
+
+
 
 											<div>
 												<button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
