@@ -10,7 +10,7 @@
 	<meta name="keywords" content="au theme template">
 
 	<!-- Title Page-->
-	<title>Cliente</title>
+	<title>Cadastrar Produto</title>
 
 	<!-- Fontfaces CSS-->
 	<link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -188,76 +188,105 @@
 				<div class="section__content section__content--p30">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-8">
-								<!-- INICIO DO CONTEUDO-->
+							<div class="col-md-10">
+								<div class="col-lg-10">
+									<div class="card">
+										<div class="card-header">
+											<strong>Cadastrar Produto</strong>
+										</div>
+										<div class="card-body card-block">
+											<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
 
-
-
-								<div class="form-group has-success">
-									<label for="cc-name" class="control-label mb-1">Marca</label>
-									<input id="cc-name" name="cc-name" placeholder="Digite a Marca" type="text" class="form-control cc-name valid" data-val="true"
-									    maxlength="14" data-val-required="Digite a Marca" autocomplete="cc-name" aria-required="true" aria-invalid="false"
-									    aria-describedby="cc-name-error">
-									<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group has-success">
-									<label for="cc-name" class="control-label mb-1">Modelo</label>
-									<input id="cc-name" name="cc-name" placeholder="Digite o Modelo" type="text" class="form-control cc-name valid" data-val="true"
-									    maxlength="14" data-val-required="Digite o Modelo" autocomplete="cc-name" aria-required="true" aria-invalid="false"
-									    aria-describedby="cc-name-error">
-									<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-								</div>
-
-								<label for="select" class=" form-control-label">Tipo</label>
-								<div class="form-group has-success">
-									<select name="select" id="select" class="form-control">
-										<option value="0">Selecione o tipo</option>
-										<option value="1">Roupa</option>
-										<option value="2">Calçado</option>
-										<option value="3">Acessorio</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
-									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Digite o preço da venda"
-									    data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
-									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group">
-									<label for="cc-exp" class="control-label mb-1">Preço de Custo</label>
-									<input id="cc-exp" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true" data-val-required="Preço de Custo"
-									    data-val-cc-exp="Preço de Custo" placeholder="R$ 00,00" autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
-									<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group has-success">
-										<label for="cc-name" class="control-label mb-1">Especificação</label>
-										<input id="cc-name" name="cc-name" placeholder="Especificar o produto" type="text" class="form-control cc-name valid" data-val="true"
-											maxlength="14" data-val-required="Especificar o produto" autocomplete="cc-name" aria-required="true" aria-invalid="false"
-											aria-describedby="cc-name-error">
-										<span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+												<div class="row form-group">
+													<div class="col col-md-3">
+														<label for="text-input" class=" form-control-label">Marca</label>
+													</div>
+													<div class="col-12 col-md-6">
+														<input type="text" id="marca-input" name="text-input" placeholder="Nike" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+														<label for="text-input" class=" form-control-label">Modelo</label>
+													</div>
+													<div class="col-12 col-md-6">
+														<input type="text" id="modelo-input" name="text-input" placeholder="Shox" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+														<label class=" form-control-label">Tipo de Produto</label>
+													</div>
+													<div class="col col-md-6">
+														<div class="form-check">
+															<div class="radio">
+																<label for="radio1" class="form-check-label ">
+																	<input type="radio" id="radioRoupa" name="radios" value="roupa" class="form-check-input">Roupa
+																</label>
+															</div>
+															<div class="radio">
+																<label for="radio2" class="form-check-label ">
+																	<input type="radio" id="radioCalcado" name="radios" value="calcado" class="form-check-input">Calçado
+																</label>
+															</div>
+															<div class="radio">
+																<label for="radio3" class="form-check-label ">
+																	<input type="radio" id="radioAcessorio" name="radios" value="acessorio" class="form-check-input">Acessório
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+														<label for="text-input" class=" form-control-label">Especificação</label>
+													</div>
+													<div class="col-12 col-md-6">
+														<input type="text" id="especificacao-input" name="text-input" placeholder="Tamanho" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+														<label for="text-input" class=" form-control-label">Posição</label>
+													</div>
+													<div class="col-12 col-md-6">
+														<input type="text" id="posicao-input" name="text-input" placeholder="Localização no estoque" class="form-control">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6">
+														<label for="cc-exp" class="control-label mb-1">Preço de Custo</label>
+														<input id="input-precoCusto" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true"
+														 data-val-required="Preço de Custo" data-val-cc-exp="Preço de Custo" placeholder="R$ 00,00" autocomplete="cc-exp"
+														 onkeypress="mascara(this,moeda)">
+														<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+													</div>
+													<div class="col col-md-6">
+															<label for="cc-exp" class="control-label mb-1">Preço da Venda</label>
+															<input id="input-precoVenda" name="cc-exp" type="text" class="form-control cc-exp" value="" maxlength="8" data-val="true"
+															 data-val-required="Digite o preço da venda" data-val-cc-exp="Digite o preço da venda" placeholder="R$ 00,00"
+															 autocomplete="cc-exp" onkeypress="mascara(this,moeda)">
+															<span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+													</div>
+												</div>
+												<div class="row form-group">
+													
+												</div>
+											</form>
+										</div>
+										<div class="card-footer" align="center">
+											<button type="submit" class="btn btn-primary btn-md">
+												<i class="fa fa-dot-circle-o"></i> Salvar
+											</button>
+											
+											<button type="reset" class="btn btn-danger btn-md">
+												<i class="fa fa-ban"></i> Resetar
+											</button>
+										</div>
 									</div>
 
-
-
-
-								<div class="row">
-									<div class="col">
-										<section>
-											<div class="text-secondary btn btn-primary botao">
-												<a href="CadastroCliente.html">
-													<i class="fa fa-plus-circle"></i>&nbsp;Adicionar Produto</a>
-											</div>
-										</section>
-									</div>
 								</div>
-								<br>
-
-
-								<!-- END PAGE CONTAINER-->
+								<!-- FIM DO CONTEUDO-->
 
 							</div>
 
