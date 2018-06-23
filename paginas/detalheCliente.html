@@ -34,6 +34,9 @@
 	<link href="../css/theme.css" rel="stylesheet" media="all">
 	<link href="../css/style.css" rel="stylesheet" media="all">
 
+	<!-- Awesome Icons Font-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="animsition">
@@ -193,57 +196,89 @@
 								<div class="card">
 									<div class="card-body card-block">
 										<form action="" method="post" class>
-											<div class="form-group FormDetalheCliente">
-												<label for="InputNomeCliente" class="pr-1  form-control-label">Nome</label>
-												<input type="text" id="InputNomeCliente" value="Luiz Sérgio Resende" required="" class="form-control">
+											<div class="form-row">
+
+												<div class="form-group col-md-8">
+													<label for="InputNomeCliente" class="pr-1  form-control-label">Nome</label>
+													<input type="text" id="InputNomeCliente" value="Luiz Sérgio Resende" required="" class="form-control">
+												</div>
+
+												<div class="form-group col-md-2">
+													<label for="InputIdadeCliente" class="px-1  form-control-label">Idade</label>
+													<input type="text" id="InputIdadeCliente" value="24 anos" required="" class="form-control">
+												</div>
+
+												<div class="form-group col-md-2">
+													<label for="InputAniversario" class="px-1  form-control-label">Aniversario</label>
+													<input type="text" id="InputAniversario" value="14/04" required="" class="form-control">
+												</div>
 											</div>
-											<div class="form-group">
-												<label for="InputWhatsapp" class="px-1  form-control-label">Whatsapp</label>
-												<input type="text" id="InputWhatsapp" value="34 0000-0000" required="" class="form-control">
+											<div class="form-row">
+												<div class="form-group col-md-3">
+													<label for="InputCPF" class="px-1  form-control-label">CPF</label>
+													<input type="text" id="InputCPF" value="000.000.000-54" required="" class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+												<div class="form-group col-md-3">
+													<label for="InputFone" class="px-1  form-control-label">Fone</label>
+													<input type="text" id="InputFone" value="34 0000-0000" required="" class="form-control">
+												</div>
+												<div class="col-md-1"></div>
+												<div class="form-group col-md-3">
+													<label for="InputWhatsapp" class="px-1  form-control-label">Whatsapp</label>
+													<input type="text" id="InputWhatsapp" value="34 0000-0000" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<a href="whatsapp.com">
+														<button class="iconsFA">
+															<i class="fa fa-whatsapp"></i>
+														</button>
+													</a>
+												</div>
 											</div>
-											<div class="form-group">
-												<label for="InputIdadeCliente" class="px-1  form-control-label">Idade</label>
-												<input type="text" id="InputIdadeCliente" value="24 anos" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputAniversario" class="px-1  form-control-label">Aniversario</label>
-												<input type="text" id="InputAniversario" value="14/04" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputCPF" class="px-1  form-control-label">CPF</label>
-												<input type="text" id="InputCPF" value="000.000.000-54" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputFone" class="px-1  form-control-label">Fone</label>
-												<input type="text" id="InputFone" value="34 0000-0000" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputWhatsapp" class="px-1  form-control-label">Whatsapp</label>
-												<input type="text" id="InputWhatsapp" value="34 0000-0000" required="" class="form-control">
-											</div>
+
+
 											<div class="form-group">
 												<label for="InputEndereco" class="px-1  form-control-label">Endereço</label>
 												<input type="text" id="InputEndereco" value="Rua exemplo, n 80" required="" class="form-control">
 											</div>
-											<div class="form-group">
-												<label for="InputBairro" class="px-1  form-control-label">Bairro</label>
-												<input type="text" id="InputBairro" value="Mercês" required="" class="form-control">
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<label for="InputBairro" class="px-1  form-control-label">Bairro</label>
+													<input type="text" id="InputBairro" value="Mercês" required="" class="form-control">
+												</div>
+												<div class="form-group col-md-4">
+													<label for="InputCidade" class="px-1  form-control-label">Cidade</label>
+													<input type="text" id="InputCidade" value="Uberaba" required="" class="form-control">
+												</div>
+												<div class="form-group col-md-4">
+													<label for="InputEstado" class="px-1  form-control-label">Estado</label>
+													<input type="text" id="InputEstado" value="Minas Gerais" required="" class="form-control">
+												</div>
 											</div>
-											<div class="form-group">
-												<label for="InputCidade" class="px-1  form-control-label">Cidade</label>
-												<input type="text" id="InputCidade" value="Uberaba" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputEstado" class="px-1  form-control-label">Estado</label>
-												<input type="text" id="InputEstado" value="Minas Gerais" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputFacebook" class="px-1  form-control-label">Facebook</label>
-												<input type="text" id="InputFacebook" value="http://www.facebook.com/iago.rdg" required="" class="form-control">
-											</div>
-											<div class="form-group">
-												<label for="InputInstagram" class="px-1  form-control-label">Instagram</label>
-												<input type="text" id="InputInstagram" value="http://www.instagram.com/iago.rdg" required="" class="form-control">
+											<div class="form-row">
+												<div class="form-group col-md-5">
+													<label for="InputFacebook" class="px-1  form-control-label">Facebook</label>
+													<input type="text" id="InputFacebook" value="http://www.facebook.com/iago.rdg" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<a href="http://www.facebook.com/iago.rdg">
+														<button class="iconsFA">
+															<i class="fa fa-facebook-official"></i>
+														</button>
+													</a>
+												</div>
+												<div class="form-group col-md-5">
+													<label for="InputInstagram" class="px-1  form-control-label">Instagram</label>
+													<input type="text" id="InputInstagram" value="http://www.instagram.com/iago.rdg" required="" class="form-control">
+												</div>
+												<div class="col-md-1">
+													<a href="http://www.instagram.com/iago.rdg">
+													<button class="iconsFA">
+														<i class="fa fa-instagram"></i>
+													</button>
+													</a>
+												</div>
 											</div>
 										</form>
 									</div>
@@ -480,7 +515,7 @@
 			<!-- end modal scroll -->
 			<!-- modal static -->
 			<div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
-			 data-backdrop="static">
+			    data-backdrop="static">
 				<div class="modal-dialog modal-sm" role="document">
 					<div class="modal-content">
 						<div class="modal-header">

@@ -4,6 +4,7 @@
 .botao{
     color: white !important;
 }
+<<<<<<< HEAD
 .botao{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -15,3 +16,14 @@
 .data{
     letter-spacing: 1px;
 }
+=======
+.form10{
+    width: 10% !important;
+    
+}
+.iconsFA{
+    font-size:35px;
+    position: absolute;
+    bottom: 5px;
+}
+>>>>>>> 52cfc529bf0f48062bbdef79fced68704b5826dd
