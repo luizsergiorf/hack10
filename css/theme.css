@@ -1202,7 +1202,6 @@ section {
         position: relative;
         top: 0;
         left: 0;
-        height: 170px;
     }
 }
 
@@ -1291,7 +1290,6 @@ section {
 
 @media (max-width: 991px) {
     .header-button {
-        margin-top: 30px;
         width: 100%;
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
@@ -3172,7 +3170,7 @@ section {
 }
 
 .overview-box .icon i {
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -4271,7 +4269,7 @@ section {
     white-space: nowrap;
     font-size: 14px;
     color: #fff;
-    padding: 14px 5px;
+    padding: 16px 8px;
     border-top: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

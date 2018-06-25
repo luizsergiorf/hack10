@@ -1,0 +1,52 @@
+.barra {
+    float: right !important;
+}
+
+.botao {
+    color: white !important;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.7rem;
+    height: 100%;
+}
+
+.btnCliente {
+    padding: .1rem .4rem;
+}
+
+.data {
+    letter-spacing: 1px;
+}
+
+.iconsFA {
+    font-size: 35px;
+    position: absolute;
+    bottom: 5px;
+}
+
+section a {
+    color: white;
+}
+
+.precoTotal {
+    font-size: 22px !important;
+}
+
+.hr_class {
+    border-top: 2px solid #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pt-3-half {
+    padding-top: 1.4rem;
+}
+
+.card-footer {
+    margin-top: -30px;
+    background-color: #FFF;
+}
+
